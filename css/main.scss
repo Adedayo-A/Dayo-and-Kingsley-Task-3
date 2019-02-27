@@ -74,20 +74,12 @@ body {
     justify-content: center;
     flex-direction: row;
     margin: 0;
-    padding-top: 1rem;
-}
-
-.container {
-    width: max-content;
-    height: max-content;
-    overflow: hidden;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     width: 31.25rem;
-    /* height: 52rem; */
     background-color: #E6E6E6;
 }
 
@@ -100,7 +92,6 @@ nav {
     border-width: 0.05rem;
     background-color: white;
     z-index: 10;
-    /* position: static; */
 }
 
 ul {
@@ -120,37 +111,35 @@ nav ul li {
     font-weight: bold;
     font-size: 1.3rem;
     color: #ACABAB;
-    margin-right: 3rem;
 }
 
 ul a {
     margin-left: -1.8rem;
 }
 
+ul li:nth-of-type(1) {
+    margin-bottom: 1rem;
+}
+
 .bag-logo {
-       transform: translate(-15px, 3px);
-       width: 30px;
+    margin-right: 1rem;
 }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span {
   cursor: pointer;
   border-radius: 1px;
-  height: 2.45px;
-  width: 21px;
+  height: 5px;
+  width: 35px;
   background-color: #788080;
   position: absolute;
   display: block;
 }
 #nav-toggle>span:nth-child(1) {
-    top: 30px; 
-}
-
-#nav-toggle>span:nth-child(2) {
-    top: 35px; 
+    top: 20px; 
 }
 
 #nav-toggle span:nth-of-type(3) {
-  top: 40px;
+  top: 37px;
 }
 
 #nav-toggle span{ 
@@ -159,25 +148,27 @@ ul a {
 
 #nav-toggle.active > span:nth-child(1) {
    transform: rotate(-47deg);
-   top: 31px;
-   left: 54.55rem;
-   width: 11px;
-   height: 2.3px;
+   top: 16px;
+   left: 54rem;
+   width: 24px;
+   height: 4px;
 }
-
+/* #nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+} */
 #nav-toggle.active span:nth-child(2) {
     transform: rotate(45deg);
-    top: 30px;
-    left: 55.4rem;
-    width: 11px;
-    height: 2.3px;
+    top: 16px;
+    left: 55.7rem;
+    width: 24px;
+    height: 4px;
 }
 #nav-toggle.active span:nth-child(3) {
     transform: rotate(-90deg);
-    top: 35px;
-    width: 20px;
-    height: 1.8px;
-    left: 54.6rem;
+    top: 28px;
+    width: 40px;
+    height: 4px;
+    left: 54rem;
 }
 
 /* ul li div {
@@ -247,13 +238,6 @@ ul a {
     margin-left: 0.5rem;
 }
 
-.row-last {
-    display: flex;
-    flex-direction: row;
-    /* margin-left: 0.5rem; */
-    background-color: white;
-}
-
 .layers{
     width: 15.1rem;
     height: 10.416rem;
@@ -266,19 +250,6 @@ ul a {
     border-right: solid 0.05rem #E9E9E9;
 }
 
-.layers-last {
-    width: 15.1rem;
-    height: 10.416rem;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-bottom: solid 0.05rem white;
-    border-right: solid 0.05rem white;
-}
-
 
 
 
@@ -286,10 +257,11 @@ ul a {
 /* SECOND PAGE **DROPDOWN MENU */
 
 .wrapper-dropdown {
-    position: relative;
-    transform: translateY(-976px);
+    position: absolute;
+    top: 90px;
     z-index: 0;
     background-color: #f8f4ed;
+
 }
 
 /* TOP CONTAINER ELEMENTS */
@@ -361,7 +333,6 @@ background-color: #E34D27;
 margin: -1.5rem 0.66rem 0.583rem;
 display: flex;
 flex-direction: column;
-margin-top: 3px;
 }
 
 .outer-court {
@@ -385,7 +356,6 @@ margin-left: -3.2rem;
 
 .vertical-line {
 background-color: yellow;
-position: absolute;
 opacity: 1;
 width: 0.33rem;
 height: 3.58rem;
@@ -393,7 +363,7 @@ margin-left: -2rem;
 }
 
 .stack {
-/* margin-left: 1rem; */
+margin-left: 1rem;
 display: flex;
 flex-direction: row;
 }
@@ -442,7 +412,7 @@ font-size: 1rem;
 .index-last-innerCourt p {
 display: flex;
 flex-direction: column;
-margin-left: 1.5rem;
+margin-left: 2rem;
 margin-top: 0.5rem;
 font-size: 1.33rem;
 margin-right: auto;
@@ -478,7 +448,6 @@ margin-top: 0.2rem;
 margin-top: 1rem;
 margin-left: 2.2rem;
 color: white;
-text-align: left;
 }
 
 .cart {
@@ -490,30 +459,18 @@ margin-top: 0.4rem;
 color: #E34D27;
 }
 
-.cart p {
-margin-top: 1rem;
-margin-left: 2.2rem;
-color: #E34D27;
-text-align: left; 
-}
-
 .hamburger {
     cursor: pointer;
 }
 
-/* .homepage {
-    z-index: 1;
-} */
-
-
-.hide{
-    animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+.show {
     z-index: 0;
+    animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.show {
-    z-index: 1;
-    animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.hide{
+    animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: -1;
 }
 
 .outer-court:nth-child(1){
@@ -565,24 +522,26 @@ text-align: left;
 
 @keyframes slide-bottom {
     0% {
-            -webkit-transform: translateY(-976px);
-            transform: translateY(-976px);
+              transform: translateY(-70px);
+              /* opacity: 0 */
+              /* visibility: hidden; */
     }
     100% {
-            -webkit-transform: translateY(-440px);  
-            transform: translateY(-440px);
+              transform: translateY(0);
+              /* opacity: 1; */
+              /* visibility: visible; */
     }
   }
 
   
   @keyframes slide-top {
     0% {
-      -webkit-transform: translateY(-460px);
-              transform: translateY(-460px);
+      -webkit-transform: translateY(0);
+              transform: translateY(-30px);
     }
     100% {
-      -webkit-transform: translateY(-976px);
-              transform: translateY(-976px);
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-9999px);
     }
   }
 
@@ -675,53 +634,4 @@ text-align: left;
         /* opacity: 1; */
         visibility: visible;
     }
-  }
-
-.homepage-index {
-    z-index : -1;
-}
-
-/* CONTAINER OF SEARCH BUTTON AND INPUT SEARCH */
-.container-of-search-button {
-    background-color: white;
-    width: 31.1rem;
-    height: 6rem;
-    /* padding-top: 2px;
-    margin-top: -2rem; */
-    margin-left: 1px;
-}
-
-.input{
-    background-color: #E9E9E9;
-    border-style: none;
-    /* background: url(../images/search-icon.svg) no-repeat scroll 8px 6px; */
-    border-radius: 1.5rem;
-    padding-left: 32px;
-    width: 285px;
-    height: 27px;
-    border-radius: 1.5rem;
-    position: relative;
-    top: 21px;
-    left: 1rem;
-  }
-  
-  .input::after {
-    content:'|';
-    position:fixed; top:0; bottom:0; left:10%;  /* 3. Position the pseudo-element */
-    z-index:-1; /* 4. Stack the element behind the <body> contents */
-    width:1px; background:red; /* 5. Style the pseudo-element */
-  }
-  
-  .input::placeholder{
-    font-family: 'Circular Std Book', 'Arial';
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #707070;
-    opacity: 1;
-  }
-
-  .row-last,{
-      width: 1rem;
-      height: 1rem;
-      background-color: white;
   }

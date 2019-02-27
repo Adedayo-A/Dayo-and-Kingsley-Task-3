@@ -1,0 +1,97 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(`http-equiv='X-UA-Compatible', content='ie=edge')
+    title Homepage
+    link(rel='stylesheet', href='css/main.css')
+  body
+    .wrapper
+      nav
+        ul
+          a#nav-toggle.not-active(href='#')
+            span
+            span
+            span
+          li
+            span Women Clothes
+          img.bag-logo(src='images/logobag.svg')
+          // <li class="logobag"> <img src="images/logobag.svg"/> </li>
+      main#homepage
+        .first-layer
+          .twins
+            p Category
+          .twins
+            p Sale
+        .second-layer-column
+          .row
+            .layers
+              img(src='images/female-wear.svg', alt='An icon of a female wear')
+              p Clothing
+            .layers
+              img(src='images/shoes.svg', alt='An icon of a Male shoe')
+              p Shoes
+          .row
+            .layers
+              img(src='images/accessory.svg', alt='An icon of a Accessory')
+              p Accessories
+            .layers
+              img(src='images/wristwatch.svg', alt='An icon of a wristwatch')
+              p Watch
+          .row
+            .layers
+              img(src='images/wallet.svg', alt='An icon of a Wallet')
+              p Wallets
+            .layers
+              img(src='images/handbag.svg', alt='An icon of an handbag')
+              p handbag
+    #myDropdown.wrapper-dropdown.hide
+      //
+        <div class="first-layer-dropdown">
+        <img src="images/up-arrow.svg" alt="An up Arrow Icon"/>
+        </div>
+      main
+        .down-container
+          .outer-court
+            img(src='images/Mask Group 1.png', alt='A facial picture of a shopper', width='11.5%')
+            .index1-innerCourt
+              span Maria Shopaholicson
+              span#index-one-innerCourt Your Profile
+            img.settings(src='images/settings.svg', alt='settings icon')
+          .outer-court
+            img(src='images/men.svg', alt='A men clothing')
+            .index-innerCourt
+              span Men
+              span Clothing shoes & Accessories
+          .outer-court
+            .vertical-line
+            .stack
+              img(src='images/women.svg', alt='A facial picture of a shopper')
+              .index-innerCourt
+                span Women
+                span Clothing shoes & Accessories
+          .outer-court
+            img(src='images/cart.svg', alt='A facial picture of a shopper')
+            .index-last-innerCourt
+              p
+                span Wishlist
+                span You have 3 lists
+              .wishlist-num
+                p 17
+          .outer-court
+            img(src='images/Group 8.svg', alt='A facial picture of a shopper')
+            .index-last-innerCourt
+              p
+                span Cart
+                span Amount $224.88
+              .cart
+                p 3
+          .outer-court
+            img(src='images/Your orders.svg', alt='A facial picture of a shopper')
+            .index-last-innerCourt
+              p
+                span Your orders
+              .orders
+                p 1
+    script(type='text/javascript', src='js/script.js')

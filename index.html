@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-            <ul>
-                <li class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div> 
-                </li>
+    <div class="container">
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                <a id="nav-toggle" href="#"><span></span><span></span><span></span></a>
                 <li><span>Women Clothes</span></li>
                 <img src="images/logobag.svg" class="bag-logo"/>
-                <!-- <li class="logobag"> <img src="images/logobag.svg"/> </li> -->
             </ul>
         </nav>
-        <main id="homepage" >
+        <main id="homepage" class="homepage">
             <div class="first-layer">
                 <div class="twins"><p>Category</p></div>
                 <div class="twins"><p>Sale</p></div>
@@ -57,14 +54,19 @@
                         <p>handbag</p>
                     </div>
                 </div>
+                <!-- <div class="row-last">
+                        <div class="layers-last">
+                        </div>
+                        <div class="layers-last">
+                        </div>
+                </div> -->
             </div>
         </main>
     </div>
-
-            <div class="wrapper-dropdown hide" id="myDropdown">
-                <!-- <div class="first-layer-dropdown">
-                            <img src="images/up-arrow.svg" alt="An up Arrow Icon"/>
-                </div> -->
+            <div class="wrapper-dropdown" id="myDropdown">
+                <div class="container-of-search-button">
+                    <input type="search" name="search" placeholder="SEARCH" class="input" />
+                </div>
                 <main>
                     <div class="down-container">
                             <div class="outer-court">
@@ -120,11 +122,11 @@
                                         </p>
                                             <div class="orders"><p>1</p></div>
                                     </div>
-                            </div>
+                                </div>
                     </div>
                 </main>
             </div>
-        </div>
+    </div>
 
 <script type="text/javascript" src="js/script.js"></script>
 </body>
